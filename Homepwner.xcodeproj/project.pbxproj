@@ -16,6 +16,7 @@
 		E81189B32221105B0080EF71 /* ItemsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81189B22221105B0080EF71 /* ItemsViewController.swift */; };
 		E81189B5222111840080EF71 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81189B4222111840080EF71 /* Item.swift */; };
 		E81189B7222115950080EF71 /* ItemStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81189B6222115950080EF71 /* ItemStore.swift */; };
+		E81189B92226325F0080EF71 /* ItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E81189B82226325F0080EF71 /* ItemCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		E81189B22221105B0080EF71 /* ItemsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemsViewController.swift; sourceTree = "<group>"; };
 		E81189B4222111840080EF71 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		E81189B6222115950080EF71 /* ItemStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemStore.swift; sourceTree = "<group>"; };
+		E81189B82226325F0080EF71 /* ItemCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +86,7 @@
 				E81189B4222111840080EF71 /* Item.swift */,
 				E81189B6222115950080EF71 /* ItemStore.swift */,
 				E81189B22221105B0080EF71 /* ItemsViewController.swift */,
+				E81189B82226325F0080EF71 /* ItemCell.swift */,
 				E811898322210FC80080EF71 /* Homepwner */,
 				E811899822210FCB0080EF71 /* HomepwnerTests */,
 				E81189A322210FCB0080EF71 /* HomepwnerUITests */,
@@ -266,6 +269,7 @@
 				E81189B5222111840080EF71 /* Item.swift in Sources */,
 				E81189B7222115950080EF71 /* ItemStore.swift in Sources */,
 				E811898522210FC80080EF71 /* AppDelegate.swift in Sources */,
+				E81189B92226325F0080EF71 /* ItemCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
