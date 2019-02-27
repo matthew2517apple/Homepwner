@@ -73,7 +73,7 @@ class ItemsViewController: UITableViewController {
             let cancelAction = UIAlertAction(title: "Cancel", style: .cancel, handler: nil)
             ac.addAction(cancelAction)
             
-            let deleteAction = UIAlertAction(title: "Delete", style: .destructive, handler: {(action) -> Void in
+            let deleteAction = UIAlertAction(title: "Remove", style: .destructive, handler: {(action) -> Void in
                 self.itemStore.removeItem(item)
                 self.tableView.deleteRows(at: [indexPath], with: .automatic)
             })
@@ -89,10 +89,19 @@ class ItemsViewController: UITableViewController {
         }
     }
     
-    // update the database whenever a row is moved:
+    // Update the database whenever a row is moved:
     override func tableView(_ tableView: UITableView,
                             moveRowAt sourceIndexPath: IndexPath,
                             to destinationIndexPath: IndexPath) {
         itemStore.moveItem(from: sourceIndexPath.row, to: destinationIndexPath.row)
     }
+    
+    // Bronze challenge:
+    // Copied from:
+    // https://forums.bignerdranch.com/t/bronze-challenge-renaming-the-delete-button/11247
+    // (This func didn't turn up when I searched the Apple documentation page for "delete")
+    override func tableView(_ tableView: UITableView, titleForDeleteConfirmationButtonForRowAt indexPath: IndexPath) -> String? {
+        return "Remove"
+    }
+    
 }
